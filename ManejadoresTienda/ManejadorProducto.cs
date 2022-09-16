@@ -27,5 +27,11 @@ namespace ManejadoresTienda
             tablaProductos.Columns.Insert(4, _grafico.Boton("Modificar", Color.Blue));
             tablaProductos.Columns.Insert(5, _grafico.Boton("Eliminar", Color.Red));
         }
+
+        public void agregarProducto(Producto producto)
+        {
+            _accesoProductos.agregarProducto(producto);
+            _grafico.Mensaje(string.Format("Se agrego {0}", producto.Nombre), "Producto agregado", MessageBoxIcon.Information);
+        }
     }
 }
