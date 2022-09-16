@@ -7,19 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ManejadoresTienda;
+using EntidadesTienda;
 
 namespace Tienda
 {
     public partial class FrmAgregarProducto : Form
     {
+        private ManejadorProducto _manejadorProducto;
         public FrmAgregarProducto()
         {
             InitializeComponent();
+            _manejadorProducto = new ManejadorProducto();
         }
+
+        #region
+
+        private void Cerrar()
+        {
+            this.Close();
+        }
+
+        #endregion
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Cerrar();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            _manejadorProducto.agregarProducto(new Producto
+            {
+                IdProducto = 0,
+                Nombre = txtNombre.Text,
+                Descripcion = txtDescripcion.Text,
+                Precio = Convert.ToDecimal(txtPrecio.Text)
+            });
+            Cerrar();
         }
     }
 }
