@@ -1,0 +1,13 @@
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\bin\Debug\ManejadoresTienda.dll
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\bin\Debug\ManejadoresTienda.pdb
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\bin\Debug\AccesoDatos.dll
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\bin\Debug\Crud.dll
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\bin\Debug\EntidadesTienda.dll
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\bin\Debug\MySql.Data.dll
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\bin\Debug\AccesoDatos.pdb
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\bin\Debug\EntidadesTienda.pdb
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\obj\Debug\ManejadoresTienda.csproj.AssemblyReference.cache
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\obj\Debug\ManejadoresTienda.csproj.CoreCompileInputs.cache
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\obj\Debug\ManejadoresTienda.csproj.CopyComplete
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\obj\Debug\ManejadoresTienda.dll
+C:\Users\cacah\source\repos\Tienda\ManejadoresTienda\obj\Debug\ManejadoresTienda.pdb

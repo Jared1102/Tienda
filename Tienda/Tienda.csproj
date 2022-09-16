@@ -92,5 +92,15 @@
   <ItemGroup>
     <None Include="Resources\agregar_32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesTienda\EntidadesTienda.csproj">
+      <Project>{312bffab-2d25-463b-9a4f-b5bf29d98e05}</Project>
+      <Name>EntidadesTienda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManejadoresTienda\ManejadoresTienda.csproj">
+      <Project>{fb23f782-6ff6-4e88-9563-01ecb5dfff69}</Project>
+      <Name>ManejadoresTienda</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
