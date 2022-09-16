@@ -41,5 +41,15 @@ namespace AccesoDatos
 
             return listProductos;
         }
+
+        public void agregarProducto(Producto producto)
+        {
+            string consulta = string.Format("call p_Productos('0','{0}','{1}',{2},1)",
+                producto.Nombre,
+                producto.Descripcion,
+                producto.Precio.ToString());
+            _conexion.EjecutarConsulta(consulta);
+
+        }
     }
 }
