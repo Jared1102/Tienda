@@ -19,6 +19,12 @@ namespace Tienda
         {
             InitializeComponent();
             _manejadorProducto = new ManejadorProducto();
+            if (FrmTienda.producto != null)
+            {
+                txtDescripcion.Text = FrmTienda.producto.Descripcion.ToString();
+                txtNombre.Text = FrmTienda.producto.Nombre.ToString();
+                txtPrecio.Text = FrmTienda.producto.Precio.ToString();
+            }
         }
 
         #region
@@ -37,14 +43,32 @@ namespace Tienda
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            _manejadorProducto.agregarProducto(new Producto
+            if (FrmTienda.producto == null)
             {
-                IdProducto = 0,
-                Nombre = txtNombre.Text,
-                Descripcion = txtDescripcion.Text,
-                Precio = Convert.ToDecimal(txtPrecio.Text)
-            });
+                _manejadorProducto.agregarProducto(new Producto
+                {
+                    IdProducto = 0,
+                    Nombre = txtNombre.Text,
+                    Descripcion = txtDescripcion.Text,
+                    Precio = Convert.ToDecimal(txtPrecio.Text)
+                });
+            }
+            else
+            {
+                _manejadorProducto.modificarProducto(new Producto
+                {
+                    IdProducto = FrmTienda.producto.IdProducto,
+                    Nombre = txtNombre.Text,
+                    Descripcion = txtDescripcion.Text,
+                    Precio = Convert.ToDecimal(txtPrecio.Text)
+                });
+            }
             Cerrar();
+        }
+
+        private void FrmAgregarProducto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

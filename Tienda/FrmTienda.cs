@@ -53,6 +53,9 @@ namespace Tienda
             };
             switch (e.ColumnIndex)
             {
+                case 4: FrmAgregarProducto frmAgregarProducto = new FrmAgregarProducto();
+                        frmAgregarProducto.ShowDialog();
+                    ;break;
                 case 5: _manejadorProducto.borrarProducto(producto); break;
             }
 

@@ -44,5 +44,16 @@ namespace ManejadoresTienda
                 _grafico.Mensaje("Producto Borrado","Producto borrado",MessageBoxIcon.Information);
             }
         }
+
+        public void modificarProducto(Producto producto)
+        {
+            DialogResult dr = MessageBox.Show(string.Format("¿Esta seguro de realizar los cambios de {0}?", producto.Nombre), "Actualizando producto",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dr == DialogResult.Yes)
+            {
+                _accesoProductos.modificarProducto(producto);
+                _grafico.Mensaje(string.Format("Se actualizo {0}",producto.Nombre), "Producto actualizado", MessageBoxIcon.Information);
+            }
+        }
     }
 }
