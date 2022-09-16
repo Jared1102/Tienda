@@ -33,5 +33,16 @@ namespace ManejadoresTienda
             _accesoProductos.agregarProducto(producto);
             _grafico.Mensaje(string.Format("Se agrego {0}", producto.Nombre), "Producto agregado", MessageBoxIcon.Information);
         }
+
+        public void borrarProducto(Producto producto)
+        {
+            DialogResult dr = MessageBox.Show(string.Format("¿Esta seguro de borrar {0}?", producto.Nombre), "Borrando producto",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dr == DialogResult.Yes)
+            {
+                _accesoProductos.borrarProducto(producto.IdProducto);
+                _grafico.Mensaje("Producto Borrado","Producto borrado",MessageBoxIcon.Information);
+            }
+        }
     }
 }
