@@ -31,12 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.dtgTienda = new System.Windows.Forms.DataGridView();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTienda)).BeginInit();
             this.SuspendLayout();
@@ -51,16 +51,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 100);
             this.panel1.TabIndex = 0;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Image = global::Tienda.Properties.Resources.cerrar_16;
-            this.btnCerrar.Location = new System.Drawing.Point(1150, 34);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnCerrar.TabIndex = 2;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label1
             // 
@@ -86,15 +76,6 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(889, 26);
             this.txtBuscar.TabIndex = 0;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Image = global::Tienda.Properties.Resources.agregar_32;
-            this.btnAgregar.Location = new System.Drawing.Point(1086, 132);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(40, 40);
-            this.btnAgregar.TabIndex = 1;
-            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // dtgTienda
             // 
@@ -126,6 +107,26 @@
             this.dtgTienda.Size = new System.Drawing.Size(928, 361);
             this.dtgTienda.TabIndex = 4;
             this.dtgTienda.TabStop = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Image = global::Tienda.Properties.Resources.agregar_32;
+            this.btnAgregar.Location = new System.Drawing.Point(1086, 132);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(40, 40);
+            this.btnAgregar.TabIndex = 1;
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = global::Tienda.Properties.Resources.cerrar_16;
+            this.btnCerrar.Location = new System.Drawing.Point(1150, 34);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmTienda
             // 

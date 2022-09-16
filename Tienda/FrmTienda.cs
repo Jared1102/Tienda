@@ -34,5 +34,12 @@ namespace Tienda
         {
             this.Close();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FrmAgregarProducto frmAgregarProducto = new FrmAgregarProducto();
+            frmAgregarProducto.ShowDialog();
+            Actualizar();
+        }
     }
 }

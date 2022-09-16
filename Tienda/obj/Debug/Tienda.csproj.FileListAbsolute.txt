@@ -18,3 +18,4 @@ C:\Users\cacah\source\repos\Tienda\Tienda\obj\Debug\Tienda.csproj.CoreCompileInp
 C:\Users\cacah\source\repos\Tienda\Tienda\obj\Debug\Tienda.csproj.CopyComplete
 C:\Users\cacah\source\repos\Tienda\Tienda\obj\Debug\Tienda.exe
 C:\Users\cacah\source\repos\Tienda\Tienda\obj\Debug\Tienda.pdb
+C:\Users\cacah\source\repos\Tienda\Tienda\obj\Debug\Tienda.FrmAgregarProducto.resources
