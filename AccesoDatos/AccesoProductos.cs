@@ -51,5 +51,12 @@ namespace AccesoDatos
             _conexion.EjecutarConsulta(consulta);
 
         }
+
+        public void borrarProducto(int idProducto)
+        {
+            string consulta = string.Format("call p_Productos({0},'','',0.0,3)",
+                idProducto.ToString());
+            _conexion.EjecutarConsulta(consulta);
+        }
     }
 }
