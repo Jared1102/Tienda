@@ -50,7 +50,8 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 86);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 5;
+            this.panel1.TabStop = true;
             // 
             // btnCerrar
             // 
@@ -58,7 +59,7 @@
             this.btnCerrar.Location = new System.Drawing.Point(238, 27);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.TabIndex = 4;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
@@ -76,7 +77,7 @@
             this.txtNombre.Location = new System.Drawing.Point(102, 112);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(153, 26);
-            this.txtNombre.TabIndex = 2;
+            this.txtNombre.TabIndex = 0;
             // 
             // label2
             // 
@@ -102,7 +103,7 @@
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(244, 73);
-            this.txtDescripcion.TabIndex = 4;
+            this.txtDescripcion.TabIndex = 2;
             // 
             // label4
             // 
@@ -118,14 +119,14 @@
             this.txtPrecio.Location = new System.Drawing.Point(102, 162);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(153, 26);
-            this.txtPrecio.TabIndex = 6;
+            this.txtPrecio.TabIndex = 1;
             // 
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(73, 339);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(141, 42);
-            this.btnGuardar.TabIndex = 8;
+            this.btnGuardar.TabIndex = 3;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
