@@ -58,5 +58,15 @@ namespace AccesoDatos
                 idProducto.ToString());
             _conexion.EjecutarConsulta(consulta);
         }
+
+        public void modificarProducto(Producto producto)
+        {
+            string consulta = string.Format("call p_Productos({0},'{1}','{2}',{3},2)",
+                producto.IdProducto.ToString(),
+                producto.Nombre.ToString(),
+                producto.Descripcion.ToString(),
+                producto.Precio.ToString());
+            _conexion.EjecutarConsulta(consulta);
+        }
     }
 }
