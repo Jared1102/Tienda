@@ -30,9 +30,13 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.dtgTienda = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTienda)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,29 +59,57 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tienda";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(65, 142);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Buscar";
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(151, 139);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(875, 26);
+            this.txtBuscar.TabIndex = 0;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Image = global::Tienda.Properties.Resources.agregar_32;
+            this.btnAgregar.Location = new System.Drawing.Point(1086, 132);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(40, 40);
+            this.btnAgregar.TabIndex = 1;
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            // 
             // btnCerrar
             // 
             this.btnCerrar.Image = global::Tienda.Properties.Resources.cerrar_16;
             this.btnCerrar.Location = new System.Drawing.Point(1150, 34);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.TabIndex = 2;
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // dtgTienda
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 127);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Buscar";
+            this.dtgTienda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTienda.Location = new System.Drawing.Point(130, 203);
+            this.dtgTienda.Name = "dtgTienda";
+            this.dtgTienda.Size = new System.Drawing.Size(928, 361);
+            this.dtgTienda.TabIndex = 4;
+            this.dtgTienda.TabStop = false;
             // 
             // FrmTienda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.dtgTienda);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,6 +120,7 @@
             this.Text = "Tienda";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTienda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,6 +132,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.DataGridView dtgTienda;
     }
 }
 
